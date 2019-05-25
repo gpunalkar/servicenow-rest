@@ -4,7 +4,9 @@
   "description": "Comprehensive wrapper for ServiceNow REST APIs: Table, Aggregate, ImportSet, Attachment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Abey Ahmad",
   "license": "ISC",
@@ -12,7 +14,8 @@
     "bluebird": "^3.1.1",
     "mime": "^1.3.4",
     "request": "^2.67.0",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "snyk": "^1.167.2"
   },
   "devDependencies": {},
   "keywords": [
@@ -29,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/abeyahmad/servicenow-rest/issues"
   },
-  "homepage": "https://github.com/abeyahmad/servicenow-rest#readme"
+  "homepage": "https://github.com/abeyahmad/servicenow-rest#readme",
+  "snyk": true
 }
